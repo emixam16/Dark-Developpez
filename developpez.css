@@ -262,7 +262,8 @@ li.activitybit
     filter:invert(0.86) hue-rotate(-45deg);
 }
 blockquote > span:not(.bbcode_code), blockquote > :not(.bbcode_code) > li  span, blockquote > b > span  { /*minicode*/
-    background: #333 !important;
+    color:#000 ;
+    filter:invert(0.86) hue-rotate(-45deg);
 }
 
 .postbitlegacy .userinfo,
@@ -297,4 +298,3 @@ dd.userprof_moduleinactive,
 
   /*sondage fin*/
     
-

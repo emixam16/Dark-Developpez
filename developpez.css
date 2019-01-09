@@ -13,6 +13,7 @@
     #navbar_notice_2,
     #gabarit_recherche,
     body > header:nth-child(1) > div:nth-child(3),
+
     #gabarit_barre2 {
     display: none;
   }
@@ -26,7 +27,7 @@
   }
   
   /*dark*/
-    html, body, .contenuPage {
+    html, body, body.content, .contenuPage{
     background: #1c2126;
     color: #BDC3C7;
   }
@@ -175,10 +176,6 @@
       background: #1C2126 none repeat scroll 0% 0%;
   }
 
-
-
-
-
 .contenuPage a, .contenuPage a:hover{
     background: none;
     color:    #3E7CBB;
@@ -190,18 +187,20 @@
     height: 20px;
     visibility:hidden
 }
-#ano_colonne_droite > div:nth-child(2) > *{
+#ano_colonne_droite > div:nth-child(2) > *,#usercp_nav >div:nth-child(4){
     visibility:hidden;
     height:0px;
-    /*filter:invert(0.75) hue-rotate(180deg);*/  
 }
+
 .cke_skin_kama .cke_wrapper.cke_ltr, .cke_skin_kama .cke_button a,cke_toolgroup, .cke_toolbar{
     background : #555;
 }
 .cke_skin_kama .cke_editor .cke_toolgroup{
      background : #778;
 }
-.sticky  , .nonsticky, .forumrow {
+/*Principal*/
+.sticky  , .nonsticky, .forumrow,
+.pmlist .blockrow{
     background-color:#303035 !important;
     color: #DDD !important;
 }
@@ -212,26 +211,63 @@
 .forum_info_block ,
 #forum_display_options,
 .toolsmenu, .blockbody,
-.blockbody,
 .threadbit .alt,
 .navlinks,
 #forumrules,
 #table_menu, .menu_cours *
 { 
-     background-color:#454555 !important ;
+     background:#454550  ;
+     color: #eee;
 }
+#usercp_nav .blockrow {
+    background:#454550 !important;
+}
+
+.blocksubhead{
+    background:#454550 !important;
+    color: #CCD !important;
+}
+
+#sidebar_container.member_summary,
+#sidebar_container .blocksubhead,
+.moduleinactive_bg,
+#sidebar_container .underblock{
+    background-image:none !important;
+    background:#303036 !important;
+    color: #c5c5c5;
+}
+#sidebar_container .userprof_content .blockrow, #sidebar_container .blockbody,
+li.activitybit
+{
+    color: #B0B0B5;
+    background-color:#353545 !important;
+}
+#sidebar_container .blockbody.userprof_content *{
+    
+    color:#B0B0B5 ;
+}
+
+
 .cours ul{
     filter:invert(0.9)  hue-rotate(180deg);
 }
 
 .blockfoot, .remonter, .ligne_entete{
-    background-color: #234;
+    background: #234;
     color: #AAF;
+}
+.bbcode_container pre.bbcode_code{ /*code*/
+    
+    color:#000 ;
+    filter:invert(0.86) hue-rotate(-45deg);
+}
+blockquote > span:not(.bbcode_code), blockquote > :not(.bbcode_code) > li  span, blockquote > b > span  { /*minicode*/
+    background: #333 !important;
 }
 
 .postbitlegacy .userinfo,
-.postbitlegacy  .postdetails{
-background-color: #556;
+.postbitlegacy  .postdetails,#sidebar_container .blockrow{
+    background-color: #556;
 }
 .postbit, .postbitlegacy, .eventbit{
     color: #7AF;
@@ -239,17 +275,23 @@ background-color: #556;
 dd, dt, p, .wgo_block .blocksubhead{
     color: #C5C5C5 ;
 }
-.shade, .wgo_block .time{
+.shade, .wgo_block .time, .time{
     color:#BBB ;
 }
-.toolsmenu a{ 
+.toolsmenu a, #sidebar_container a{ 
      color: #59ABE3 !important;
 }
 .postbitlegacy .postfoot .textcontrols,
 .postbitlegacy .postfoot .textcontrols a.blog,
 .postbitlegacy .postfoot .textcontrols a.report,
 .postbitlegacy .postfoot .textcontrols a.newreply,
-.postbitlegacy .postfoot .textcontrols a.multiquote{
+.postbitlegacy .postfoot .textcontrols a.multiquote,
+.postbitlegacy .postfoot .textcontrols a.editpost,
+.userprof_headers,
+.activitystream_block dd,
+dd.userprof_moduleinactive,
+.userprof_button,
+#activity_tab_container > div{
     background-color : #CCD ;
 }
 

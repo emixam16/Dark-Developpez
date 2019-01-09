@@ -36,7 +36,9 @@
     background: #39424d !important;
     color: #BDC3C7 !important;
   }
-  
+#table_menu a{
+    background:none;
+}
   .gabarit_sousmenu li a, .annonce:nth-child(odd), #listing .annonce:nth-child(odd) {
     background: #39424d !important;
     color: #BDC3C7 !important;
@@ -209,8 +211,10 @@
 .threadstats.td.alt ,
 #ano_colonne_contenu ,
 .forum_info_block ,
+.forum_info .blockbody,
 #forum_display_options,
 .toolsmenu, .blockbody,
+.thread_info .blockbody,
 .threadbit .alt,
 .navlinks,
 #forumrules,

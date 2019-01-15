@@ -1,22 +1,20 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 /*Nettoyage*/
 
-	/*Colone gauche*/
-    #colonneDroite, #RubriqueDroite,
+/*Colone gauche*/
+   /* #colonneDroite,*/ #RubriqueDroite,
     /*Offre emploie*/
     #actu > div:nth-child(4),      
     /*colone droite*/
-    #colonneDroite,
     /*Pides de page*/
     #gabarit_responsable, #gabarit_pied, #gabarit_copyright,
     /*Msg cnx*/
     #navbar_notice_2,
-    #gabarit_recherche,
     body > header:nth-child(1) > div:nth-child(3),
 
     #gabarit_barre2 {
     display: none;
-  }
+}
   
   #listing {
     width: 50%;
@@ -28,7 +26,7 @@
   
   /*dark*/
     html, body, body.content, .contenuPage{
-    background: #1c2126;
+        background: #1c2126; 
     color: #BDC3C7;
   }
 
@@ -51,10 +49,12 @@
     background: #293a4e
   }
   
-  .alaune2, .alauneTitle a, .alauneContent, div .alaune > table > tbody > tr >td {
+  .alaune2, .alauneTitle a, .alauneContent, div .alaune > table > tbody > tr >td , #colonneDroite div.alaune {
     color: #BDC3C7 !important;
     background-color: #304155 !important;
+     
   }
+    
 /*Fin*/
 
   
@@ -123,9 +123,9 @@
     color: #BDC3C7;
   }
 
-/*
-.forumicon, .inlineimg, .inlineimg:hover{
-   
+/* Hack dégueu car les img sont pas transparentes
+.forumicon, .inlineimg, .inlineimg:hover{ 
+   background-color:#fff
 }
   */
   #gabarit_barre2 {
@@ -159,9 +159,6 @@
      color: #59ABE3 !important;
   }
   
-  
-
-  
   #pollinfo .polltitle {
     color: whitesmoke;
 }
@@ -184,16 +181,6 @@
 }
 
 
-#gabarit_pubBB
-{
-    height: 20px;
-    visibility:hidden
-}
-#ano_colonne_droite > div:nth-child(2) > *,#usercp_nav >div:nth-child(4){
-    visibility:hidden;
-    height:0px;
-}
-
 .cke_skin_kama .cke_wrapper.cke_ltr, .cke_skin_kama .cke_button a,cke_toolgroup, .cke_toolbar{
     background : #555;
 }
@@ -215,17 +202,20 @@
 #forum_display_options,
 .toolsmenu, .blockbody,
 .thread_info .blockbody,
+.wgo_block .blockbody,
+.quote_container,
 .threadbit .alt,
 .navlinks,
 #forumrules,
 #table_menu, .menu_cours *
 { 
-     background:#454550  ;
+     background:#404046  ;
      color: #eee;
 }
-#usercp_nav .blockrow {
+#usercp_nav .blockrow, #usercp_nav div .blockbody {
     background:#454550 !important;
 }
+
 
 .blocksubhead{
     background:#454550 !important;
@@ -251,11 +241,9 @@ li.activitybit
     color:#B0B0B5 ;
 }
 
-
 .cours ul{
     filter:invert(0.9)  hue-rotate(180deg);
 }
-
 .blockfoot, .remonter, .ligne_entete{
     background: #234;
     color: #AAF;
@@ -272,13 +260,16 @@ blockquote > span:not(.bbcode_code), blockquote > :not(.bbcode_code) > li  span,
 
 .postbitlegacy .userinfo,
 .postbitlegacy  .postdetails,#sidebar_container .blockrow{
-    background-color: #556;
+    background-color: #667;
+    
 }
+
+
 .postbit, .postbitlegacy, .eventbit{
     color: #7AF;
 }
 dd, dt, p, .wgo_block .blocksubhead{
-    color: #C5C5C5 ;
+    color: #99A ;
 }
 .shade, .wgo_block .time, .time{
     color:#BBB ;
@@ -300,5 +291,26 @@ dd.userprof_moduleinactive,
     background-color : #CCD ;
 }
 
-  /*sondage fin*/
-    
+/* Recherche profil*/
+
+.postbit .userinfo_noavatar{
+    background-color: #445;
+    color: #fee
+}
+.postbit .posthead{
+    background-color: #9090A5
+}
+.postbit .postbody{
+    background-color:#303035;
+    color: #ccd;
+}
+
+ #gabarit_pubBB, #gabarit_pubBB * , #ano_colonne_droite > div:nth-child(2) > div,#usercp_nav >div:nth-child(4), #encart_droite div,#colonneDroite, /* Pub*/
+#colonneDroite div.alaune *{ /*Best of (A la une)*/
+    background:#1c2126 !important;
+    color:#C5C5C5  !important;
+    border-color: #5a7f97 !important;
+   /*display:none !important; /* Décommenter pour supprimer la pub (y compris les messages pour les utilisateurs d'adblock) */
+}
+
+/* Fin*/

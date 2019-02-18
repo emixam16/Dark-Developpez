@@ -3,10 +3,10 @@
 
 /*Colone gauche*/
    /* #colonneDroite,*/ #RubriqueDroite,
-    /*Offre emploie*/
+    /*Offre emploi*/
     #actu > div:nth-child(4),      
     /*colone droite*/
-    /*Pides de page*/
+    /*Pieds de page*/
     #gabarit_responsable, #gabarit_pied, #gabarit_copyright,
     /*Msg cnx*/
     #navbar_notice_2,
@@ -25,7 +25,7 @@
   }
   
   /*dark*/
-    html, body, body.content, .contenuPage{
+    html, body, body.content, .contenuPage, .contenuActu{
         background: #1c2126; 
     color: #BDC3C7;
   }
@@ -137,7 +137,9 @@
     background: #14171a;
     border-style: none;
   }
-  
+.postbitlegacy .lastedited{
+    color:#CCC
+}
   .cellule_categorie {
     color: #BDC3C7;
     background: none !important;
@@ -189,7 +191,7 @@
 }
 /*Principal*/
 .sticky  , .nonsticky, .forumrow,
-.pmlist .blockrow{
+.pmlist .blockrow, .polloptionsblock{
     background-color:#303035 !important;
     color: #DDD !important;
 }
@@ -254,7 +256,7 @@ li.activitybit
     color:#000 ;
     filter:invert(0.86) hue-rotate(-45deg);
 }
-blockquote > span:not(.bbcode_code), blockquote > :not(.bbcode_code) > li  span, blockquote > b > span  { /*minicode*/
+blockquote > span:not(.bbcode_code), blockquote > :not(.bbcode_code) > li span, blockquote > b > span  { /*minicode*/
     color:#000 ;
     filter:invert(0.86) hue-rotate(-45deg);
 }
@@ -305,13 +307,23 @@ dd.userprof_moduleinactive,
     background-color:#303035;
     color: #ccd;
 }
-
+.contenuActu .showtopic .postUser,.contenuActu .showtopic .username a, .contenuActu .showtopic .user .date{
+    background-color : #333;
+    color :#CCC !important;
+}
+.reseauxSociaux .btn-block, .reseauxSociaux .nbPartage{
+    filter: invert(0.82) hue-rotate(180deg);
+}
+#gabarit_cnilcookie{
+    background : #445;
+    color : #EEF;
+}
  #gabarit_pubBB, #gabarit_pubBB * , #ano_colonne_droite > div:nth-child(2) > div,#usercp_nav >div:nth-child(4), #encart_droite div,#colonneDroite, /* Pub*/
 #colonneDroite div.alaune *{ /*Best of (A la une)*/
     background:#1c2126 !important;
     color:#C5C5C5  !important;
     border-color: #5a7f97 !important;
-   /*display:none !important; /* Décommenter pour supprimer la pub (y compris les messages pour les utilisateurs d'adblock) */
+    display:none !important; /* Décommenter pour supprimer la pub (y compris les messages pour les utilisateurs d'adblock) */
 }
 
 /* Fin*/

@@ -15,6 +15,12 @@
     #gabarit_barre2 {
     display: none;
 }
+#navbar, .navtabs > ul.floatcontainer li a, .navtabs > ul.floatcontainer li a.popupctrl, #navbar, .navtabs > ul.floatcontainer li a:hover{
+    background-color: #293a4d;
+    color : #CCC;
+}
+
+
   
   #listing {
     width: 50%;
@@ -155,7 +161,7 @@
   .content > a[target="_blank"] {
     color: #59ABE3 !important;
   }
-  
+
   /*auteur comm*/
   .fn {
      color: #59ABE3 !important;
@@ -232,6 +238,9 @@
     background-image:none !important;
     background:#303036 !important;
     color: #c5c5c5;
+}
+.forumbit_post .foruminfo .forumdata .forumtitle a{
+    color: #d5d5e0;
 }
 #sidebar_container .userprof_content .blockrow, #sidebar_container .blockbody,
 li.activitybit

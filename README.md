@@ -6,7 +6,7 @@ A dark theme for developpez
 3. That's all, you have your brand-new look and feel for developpez.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 
-Note: If you don't want to use a browser extension you can make it work natively with the [chrome/userContent.css techinque](http://kb.mozillazine.org/index.php?title=UserContent.css&printable=yes) .
+Note: If you don't want to use a browser extension you can make it work natively with the [chrome/userContent.css technique](http://kb.mozillazine.org/index.php?title=UserContent.css&printable=yes) .
 ## Contribute
 This theme is far form being perfect (i'm not a designer) please, feel free to contribute and improve it for all its users by sending a PR
 ## Acknowledgement

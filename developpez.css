@@ -20,7 +20,10 @@
     color : #CCC;
 }
 
-
+/*Latex*/
+img[title="Formule mathématique"] {
+  filter:invert(0.76) hue-rotate(180deg);
+}
   
   #listing {
     width: 50%;
@@ -332,7 +335,7 @@ dd.userprof_moduleinactive,
     background:#1c2126 !important;
     color:#C5C5C5  !important;
     border-color: #5a7f97 !important;
-    display:none !important; /* Décommenter pour supprimer la pub (y compris les messages pour les utilisateurs d'adblock) */
+    /*display:none !important; /* Décommenter pour supprimer la pub (y compris les messages pour les utilisateurs d'adblock) */
 }
 
 /* Fin*/
